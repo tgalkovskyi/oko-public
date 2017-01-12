@@ -36,6 +36,13 @@ TODO
 ### Topics
 - Table is a flat taxonomy of high-level topics which news articles are getting classified. Topics have no hierarchy and are decided by editors of OKO DB.
 
+### Annotations
+- Table that defines a relationship between pages and topics. As of now annotations were almost exclusively manual, done by human annotators who have assigned a topic and sentiment to news articles. This table can be used to store an annotation done by an automated system as well.
+- Columns:
+  * **page\_id** Key from **pages** table identifying news article.
+  * **editorial\_topic\_id** Key from **topics** table identifying editorial topic that the news article is being assigned.
+  * **editor\_id** Key from **users* table identifying annotator.
+
 ## Supplementary Tables
 
 * Countries
